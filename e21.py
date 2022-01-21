@@ -32,6 +32,6 @@ if st.button('predict'):
         DT_model=pickle.load(open('DT.pkl','rb'))
         st.success(clas[int(SVM_model.predict(single_pred))])
     else:
-        rf_model=pickle.load(open('RF.pkl','rb'))
+        RF_model=pickle.load(open('RF.pkl','rb'))
         st.success(clas[int(SVM_model.predict(single_pred))])
                     
